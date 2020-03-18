@@ -1,0 +1,72 @@
+/*
+COLORS
+
+Primary: #c69963;
+Primary-dark: #B28451;
+Primary-logo: #e8bd1f#;
+
+Secondary: #101d2c;
+
+Grey-light-1: #f9f7f6;
+Grey-light-2: #aaa;
+
+Grey-dark-1: #54483A;
+Grey-dark-2: #6D5D4B;
+
+// FONTS
+Primary: 'Nunito', sans-serif;
+Display: 'Josefin Sans', sans-serif;
+
+*/
+
+:root {
+  //COLOR VARIABLES
+  --color-primary: #c69963;
+  --color-primary-dark: #b28451;
+  --color-logo: #e8bd1f;
+
+  --color-secondary: #101d2c;
+
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #aaa;
+
+  --color-grey-dark-1: #54483a;
+  --color-grey-dark-2: #6d5d4b;
+
+  --line: 1px solid var(--color-grey-light-2);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  // FONT VARIABLES
+  --font-primary: "Nunito", sans-serif;
+  --font-display: "Josefin Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-grey-dark-2);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.logo {
+  &__icon {
+    height: 20rem;
+    
+    fill: var(--color-logo);
+  }
+}
